@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorise</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" async></script> <!--async for loading the js at same time as main --> 
+
+</head>
+
+<body>
+    <div class="button">
+        <a href="intro.html">
+            <button class="button1">MENU</button>
+        </a>
+    </div>
+
+    <div class="button">
+        <a href="rules.html">
+            <button class="button2">RULES</button>
+        </a>
+    </div>
+    <h1 class="title"> Memory Game </h1>
+
+    <div class="overlay-text visible">
+    Start
+    </div>
+    <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+    </div>
+
+
+
+    <div class="game-big-container">
+        <!--holds eveything thats in the game-->
+        <div class="game-info-container">
+            <!--*div for the time and flips *-->
+            <div class="gameinfo">
+                Time: <span id="time-remaining">100</span>
+            </div>
+            <div class="gameinfo">
+                Flips: <span id="flips-remaining">0</span>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <!--For each card (16) there is a div with a back and front photo-->
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+            </div>
+            <div class="card-front card-up">
+                <img class="cardfrontphoto" src="Pictures/33.jpeg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+            </div>
+            <div class="card-front card-up">
+                <img class="cardfrontphoto" src="Pictures/33.jpeg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/22.jpg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/22.jpg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/Mang.png">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/Mang.png">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/memelol.jpg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/memelol.jpg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/Basliksiz41_20211226162116.png">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/Basliksiz41_20211226162116.png">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/FG3MSDVVUAI0rHR.jpg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/FG3MSDVVUAI0rHR.jpg">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/duck.png">
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/duck.png">
+
+            </div>
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/nyan.jpg">
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-up">
+                <img class="cardbackphoto" src="Pictures/cardaa.png">
+
+            </div>
+
+            <div class="card-front card-up">
+                <img class="cardfrontphoto " src="Pictures/nyan.jpg">
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
